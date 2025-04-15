@@ -18,7 +18,7 @@ function App() {
   
   const route = createBrowserRouter(
     createRoutesFromElements(
-      <Route path="" element={<Layout setIsModalOpen = {setIsModalOpen} />}>
+      <Route path="" element={<Layout />}>
         <Route path="/" element={<Home setIsModalOpen = {setIsModalOpen} />} />
         <Route path="pricing" element={<PricingTable />} />
         <Route path="contact" element={<ContactForm />} />
