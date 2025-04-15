@@ -2,16 +2,12 @@ import { Outlet } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
-const Layout = ({
-  setIsModalOpen,
-}: {
-  setIsModalOpen: (isModalOpen: boolean) => void;
-}) => {
+const Layout = () => {
   return (
     <>
-      <Navbar setIsModalOpen={setIsModalOpen} />
+      <Navbar />
       <Outlet />
-      <Footer setIsModalOpen={setIsModalOpen} />
+      <Footer />
     </>
   );
 };
