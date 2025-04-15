@@ -1,7 +1,13 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 
-const ContactModal = () => {    
+const ContactModal = ({
+  isOpen,
+  onClosee,
+}: {
+  isOpen: boolean;
+  onClosee: () => void;
+}) => {    
   if (!isOpen) return null;
   const {
     register,
