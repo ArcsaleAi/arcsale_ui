@@ -10,7 +10,7 @@ const Footer = () => {
 
 
   return (
-    <footer className="bg-gradient-to-r from-blue-500 to-purple-500 relative">
+    <footer className="bg-gradient-to-r 100wh p-0 from-blue-500 to-purple-500 relative">
       <div className="max-w-7xl mx-auto px-6 py-16">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">

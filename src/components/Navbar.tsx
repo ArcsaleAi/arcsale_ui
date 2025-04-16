@@ -2,15 +2,10 @@ import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { scrollToBottom } from "../utils/scrollToBottom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const scrollToBottom = () => {
-    window.scrollTo({
-      top: document.documentElement.scrollHeight,
-      behavior: "smooth",
-    });
-  };
 
   return (
     <nav className="w-full md:px-10 md:py-6 flex justify-between items-center">
@@ -21,21 +16,21 @@ const Navbar = () => {
         </NavLink>
       </div>
       <div className="hidden md:flex gap-5 items-center">
-        <NavLink to="/aboutus" className="hover:text-gray-500 font-medium">
+        <NavLink to="/aboutus" className="hover:text-gray-500 text-lg font-medium">
           About
         </NavLink>
-        <NavLink to="/pricing" className="hover:text-gray-500 font-medium">
+        <NavLink to="/pricing" className="hover:text-gray-500 font-medium text-lg">
           Pricing
         </NavLink>
         <NavLink
           to={"/contact"}
-          className="px-4 md:py-2 py-1 text-sm rounded-full bg-black text-white cursor-pointer font-medium transition-colors"
+          className="px-6 md:py-2 py-1 text-lg rounded-full bg-black text-white cursor-pointer font-medium transition-colors"
         >
           View demo
         </NavLink>
         <button
           onClick={() => scrollToBottom()}
-          className="px-4 cursor-pointer md:py-2 font-medium py-1 text-sm rounded-full bg-black text-white hover:bg-gray-800 transition-colors"
+          className="px-6 cursor-pointer md:py-2 font-medium py-1 text-lg rounded-full bg-black text-white hover:bg-gray-800 transition-colors"
         >
           Contact Us
         </button>

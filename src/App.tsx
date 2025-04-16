@@ -28,7 +28,7 @@ function App() {
   );
 
   return (
-    <main className="p-4">
+    <main className="">
       <ReferralModal
           isOpen={isModalOpen}
           onClosee={() => setIsModalOpen(false)}
