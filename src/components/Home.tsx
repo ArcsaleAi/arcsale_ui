@@ -118,7 +118,7 @@ const Home = ({
 
   return (
     <>
-      <div className="min-h-screen bg-white">
+      <div className="md:min-h-screen bg-white">
         {/* Navigation */}
 
         {/* Main Content */}
@@ -238,13 +238,13 @@ const Home = ({
             {/* Right Section - Three Cards */}
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-white/10 flex md:backdrop-blur-lg border border-white/20 rounded-2xl shadow-xl p-3 md:p-6">
-                <p className="md:text-md text-md font-medium text-center my-auto">
+                <p className="md:text-md text-sm font-medium text-center my-auto">
                   Reduce reliance on sales associates while maintaining
                   excellent customer service.
                 </p>
               </div>
               <div className="bg-white/10 flex md:backdrop-blur-lg border border-white/20 rounded-2xl shadow-xl p-3 md:p-6">
-                <p className="md:text-md text-md font-medium my-auto text-center">
+                <p className="md:text-md text-sm font-medium my-auto text-center">
                   Boost AOV (Average Order Value) with AI-powered personalized
                   recommendations.
                 </p>
@@ -279,13 +279,13 @@ const Home = ({
             {/* Right Section - Three Cards */}
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-white/10 flex md:backdrop-blur-lg border border-white/20 rounded-2xl shadow-xl p-3 md:p-5">
-                <p className="font-medium text-md md:text-md text-center my-auto">
+                <p className="font-medium text-sm md:text-md text-center my-auto">
                   Customers get real-time product recommendations and store
                   navigation assistance.
                 </p>
               </div>
               <div className="bg-white/10 flex md:backdrop-blur-lg border border-white/20 rounded-2xl shadow-xl p-3 md:p-6">
-                <p className="font-medium text-md md:text-md my-auto text-center">
+                <p className="font-medium text-sm md:text-md my-auto text-center">
                   Reduce frustration caused by unavailable staff or long
                   checkout lines.
                 </p>

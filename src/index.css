@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
-.hide-scroll::-webkit-scrollbar{
-    display: none;
+/* Custom breakpoint override for md (870px) */
+@media (min-width: 870px) {
+  .md\:block { display: block; }
+  .md\:hidden { display: none; }
+  .md\:flex { display: flex; }
+  /* Add other commonly used md classes as needed */
+}
+
+.hide-scroll::-webkit-scrollbar {
+  display: none;
 }
