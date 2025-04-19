@@ -161,14 +161,14 @@ const Home = ({
                 <img
                   src="n1.jpg"
                   alt="Drive-thru sign"
-                  className="w-full h-90 object-cover overflow-hidden"
+                  className="w-full md:h-90 h-50 md:object-cover overflow-hidden"
                 />
               </div>
               <div className="rounded-2xl overflow-hidden mt-10">
                 <img
                   src="n2.jpg"
                   alt="Person at drive-thru"
-                  className="w-full h-90 object-cover overflow-hidden"
+                  className="w-full md:h-90 h-50 object-cover overflow-hidden"
                 />
               </div>
             </div>
